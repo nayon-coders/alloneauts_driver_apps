@@ -44,7 +44,11 @@ class WishListController{
 
   //get wishlist
   static Stream<QuerySnapshot<Map<String, dynamic>>> getWishList() {
-    return _firestore.collection("drivers_wishlist").where("driver_info", isEqualTo: _auth.currentUser!.email).snapshots();
+    if(_auth.currentUser != null){
+      return _firestore.collection("drivers_wishlist").where("driver_info", isEqualTo: "${_auth.currentUser!.email}").snapshots();
+    }else{
+      return Stream.empty();
+    }
   }
 
   //check wishlist exists or not

@@ -5,9 +5,10 @@ import '../utilitys/colors.dart';
 import '../view/auth/login.dart';
 import 'appButton.dart';
 
-class UnAuthonticateUser extends StatelessWidget {
-  const UnAuthonticateUser({
-    super.key,
+class LoginRequired extends StatelessWidget {
+  final String text;
+  const LoginRequired({
+    super.key, required this.text,
   });
 
   @override
@@ -15,6 +16,7 @@ class UnAuthonticateUser extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
+      margin: EdgeInsets.all(35),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -29,7 +31,9 @@ class UnAuthonticateUser extends StatelessWidget {
             ),
           ),
           SizedBox(height: 10,),
-          Text("Lofin first to access setting page" ),
+          Text("$text" ,
+            textAlign: TextAlign.center
+          ),
           SizedBox(height: 20,),
           AppButton(text: "Login Now", onClick: ()=>Navigator.push(context, MaterialPageRoute(builder: (context) => Login()))),
         ],
