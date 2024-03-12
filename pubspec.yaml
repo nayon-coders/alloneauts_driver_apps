@@ -58,7 +58,7 @@ dependencies:
   permission_handler:
   intl: ^0.18.1
   google_sign_in: ^6.1.6
-  flutter_twilio: ^0.0.18
+  range_slider_flutter: ^0.0.2
 
 dev_dependencies:
   flutter_test:

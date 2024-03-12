@@ -14,7 +14,23 @@
       },
       "oauth_client": [
         {
-          "client_id": "1058538096944-kdgkl3be91lgg0t6a2j6taemvkv6moif.apps.googleusercontent.com",
+          "client_id": "1058538096944-0sglv8707ue2putrc0r4pl411499klck.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alloneautos.driver",
+            "certificate_hash": "c930382872a90fa4fa870dc8f99f64e7f3ca9010"
+          }
+        },
+        {
+          "client_id": "1058538096944-vlkpiuu9srh54vnm4bonc1sqr45vjlp6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alloneautos.driver",
+            "certificate_hash": "5e8a2b3e486d2a6a7b15280e5b7bf5d04d6716e1"
+          }
+        },
+        {
+          "client_id": "1058538096944-n5bs9tangjfpea7hhcdrmeama80503kq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

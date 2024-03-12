@@ -1,3 +1,4 @@
+import 'package:driver/Firebase/controller/auth_controller.dart';
 import 'package:flutter/material.dart';
 
 import '../generated/assets.dart';
@@ -35,7 +36,11 @@ class LoginRequired extends StatelessWidget {
             textAlign: TextAlign.center
           ),
           SizedBox(height: 20,),
-          AppButton(text: "Login Now", onClick: ()=>Navigator.push(context, MaterialPageRoute(builder: (context) => Login()))),
+          AppButton(text: "Login Now", onClick: (){
+           AuthController.signOut(context);
+           // Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+
+          }),
         ],
       ),
     );
