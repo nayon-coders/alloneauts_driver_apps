@@ -1,8 +1,5 @@
 import UIKit
 import Flutter
-import FirebaseCore
-import FirebaseMessaging
-
 
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
@@ -10,13 +7,7 @@ import FirebaseMessaging
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-    FirebaseApp.configure()
-      
-    // Disable method swizzling for Firebase Messaging
-     FirebaseConfiguration.shared.setLoggerLevel(.min)
-
     GeneratedPluginRegistrant.register(with: self)
-
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 }

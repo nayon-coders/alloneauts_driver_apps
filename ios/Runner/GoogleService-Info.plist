@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1058538096944-2ddnd7lvv3jc14gi1ri0cnmqcaifev5a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1058538096944-2ddnd7lvv3jc14gi1ri0cnmqcaifev5a</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1058538096944-0sglv8707ue2putrc0r4pl411499klck.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCROpGQzOROniUFjxH1AIQeQ_2g90M0CuY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1058538096944</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.alloneautos.driver</string>
+	<key>PROJECT_ID</key>
+	<string>alloneautos-7207a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>alloneautos-7207a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1058538096944:ios:01e07d46dd7f45b62320f5</string>
+</dict>
+</plist>

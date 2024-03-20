@@ -1,5 +1,8 @@
 
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
 
@@ -9,14 +12,16 @@ class PermissionHandler{
 
   //notification permission
   static Future<void> requestNotificationPermissions() async {
-    final PermissionStatus status = await Permission.notification.request();
-    if (status.isGranted) {
-      // Notification permissions granted
-    } else if (status.isDenied) {
-      // Notification permissions denied
-    } else if (status.isPermanentlyDenied) {
-      // Notification permissions permanently denied, open app settings
-      await openAppSettings();
+    if (Platform.isAndroid) {
+      final PermissionStatus status = await Permission.notification.request();
+      if (status.isGranted) {
+        // Notification permissions granted
+      } else if (status.isDenied) {
+        // Notification permissions denied
+      } else if (status.isPermanentlyDenied) {
+        // Notification permissions permanently denied, open app settings
+        await openAppSettings();
+      }
     }
   }
 
